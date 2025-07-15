@@ -6,7 +6,7 @@
 }
 
 
-/* Valeurs par defaut */
+/* Valeurs par defaut pour eviter soucis margin/padding */
 *
 {
     margin: 0;
@@ -14,6 +14,7 @@
     box-sizing: border-box;
 }
 
+/* Eviter le scroll */
 body
 {
     width: 100vw;

@@ -1,0 +1,57 @@
+.page-title
+{
+    width: 95vw;
+    background-color: rgb(255, 234, 0);
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 2.5vw;
+}
+
+.country-information
+{
+    background-color: brown;
+    color: white;
+    padding: 5px;
+}
+
+
+/* remove arrow from detials */
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+details > summary {
+  list-style: none;
+}
+
+
+
+/* COUNTRY GENERAL INFO */
+.country-information-body > p
+{
+    margin-top: 10px;
+}
+
+.country-information-body > img
+{
+    width:100%;
+    height: auto;
+}
+
+/* SECTION */
+
+.section-information
+{
+    background-color: lightgray;
+}
+
+.section-information
+{
+    display: flex;
+    flex-direction: column;
+    width: 5vw;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+
