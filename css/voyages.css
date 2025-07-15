@@ -1,0 +1,21 @@
+
+/* Debug dimensions */
+* 
+{
+    outline: 1px solid red;
+}
+
+
+/* Valeurs par defaut */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100vw;
+    overflow-x: hidden;
+}
