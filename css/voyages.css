@@ -1,10 +1,64 @@
 
-/* Debug dimensions */
-* 
-{
-    outline: 1px solid red;
+body {
+  margin: 0;
+  font-family: "Amatic SC", cursive;
 }
 
+
+.header {
+  position: relative;
+  background-image: url("../assets/background_header.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 1.5rem;
+}
+
+.header__nav-list li img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.header__nav-list li img:hover {
+  transform: scale(1.1);
+}
+
+.header__credits {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+.header__credits:hover {
+  text-decoration: underline;
+  /* souligné mon text  */
+}
 
 /* Valeurs par defaut pour eviter soucis margin/padding */
 *
