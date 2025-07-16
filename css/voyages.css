@@ -211,7 +211,10 @@ a {
   list-style: none;
 }
 
-.navside {
+
+
+
+.navside{
   margin: 0%;
   transform: translate(10000px);
   justify-content: space-between;
@@ -258,7 +261,10 @@ input[type="checkbox"]:checked ~ .nav_btn > .navside {
   list-style: none;
 }
 
-.navside2 {
+
+
+
+.navside2{
   margin: 0%;
   transform: translate(10000px);
   justify-content: space-between;
@@ -299,4 +305,5 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
   .navside {
     display: none;
   }
+
 }
