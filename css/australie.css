@@ -1,29 +1,34 @@
+body
+{
+    font-size: 1.5rem;
+}
+
+
 .page-title
 {
-    width: 95vw;
+    width: 98vw;
     background-color: rgb(255, 234, 0);
     border-radius: 15px;
     text-align: center;
-    margin-left: 2.5vw;
+    margin-left: 1vw;
+    background-image: url("../assets/images/australia-flag.webp");
+    background-size: contain;
+    text-shadow: 2px 2px 10px black;
+    background-repeat: no-repeat;
+    height: 20vh;
+    margin-top: 2vh;
 }
 
 .country-information
 {
     background-color: brown;
     color: white;
-    padding: 5px;
+    padding: 15px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 15px;
+    margin-top: 2vh;
 }
-
-
-/* remove arrow from detials */
-details summary::-webkit-details-marker {
-  display:none;
-}
-
-details > summary {
-  list-style: none;
-}
-
 
 
 /* COUNTRY GENERAL INFO */
@@ -40,31 +45,131 @@ details > summary {
 
 /* SECTION */
 
-.section-information
+.sections-container
 {
-    background-color: lightgray;
+    background-color: rgb(251, 215, 34);
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 15px;
+    margin-top: 2vh;
+}
+
+.sections-container label
+{
+    text-align: center;
+    background-color: gray;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.sections-container label:hover
+{
+    background-color: rgb(175, 174, 174);
 }
 
 .section-information
 {
     display: flex;
     flex-direction: row;
+    flex-flow: wrap;
     justify-content: space-around;
-    height: 20vh;
     align-items: center;
+    background-color: lightgray;
 }
 
-.section-category > summary
+.section-information > .section-details
 {
-    background-color: gray;
-    width: 20vw;
+    width: 85%;
 }
 
-.section-details
+/*---------------------------
+Sections
+----------------------------- */
+
+
+#section-details-directions, #section-details-periodes
 {
-    position: relative;
-    top: 10vh;
-    left: 2.5vw;
-  
+    display: none;
 }
 
+/* radio info */
+#sec-info:checked ~ #section-details-info
+{
+    display: block;
+}
+
+#sec-info:checked ~ #section-details-directions, #section-details-periodes
+{
+    display: none;
+}
+
+/* radio directions */
+#sec-directions:checked ~ #section-details-directions
+{
+    display: block;
+}
+
+#sec-directions:checked ~ #section-details-info, #section-details-periodes
+{
+    display: none;
+}
+
+/* radion periodes */
+#sec-periodes:checked ~ #section-details-periodes
+{
+    display: block;
+}
+
+#sec-periodes:checked ~ #section-details-info, #section-detials-directions
+{
+    display: none;
+}
+
+
+/* Section à faire */
+
+@keyframes AnimationCarousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.section-a-faire {
+  display: flex;
+  width: calc(25vw * 6);
+  min-width: calc(200px * 6);
+  animation: AnimationCarousel 30s linear infinite;
+}
+
+.section-a-faire:hover
+{
+    animation-play-state: paused;
+}
+
+.section-a-faire-element {
+  margin-right: 4vw;
+  width: 25vw;
+  min-width: 200px;
+  padding: 10px;
+}
+
+section img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-details > p
+{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+section > h2
+{
+    text-align: center;
+}

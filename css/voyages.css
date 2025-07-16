@@ -6,8 +6,6 @@ body {
   /* padding: 1.5rem; */
 }
 
-<<<<<<< HEAD
-=======
 a {
   text-decoration: none;
   color: white;
@@ -16,7 +14,6 @@ a {
         /* ========
             HEADER 
           ========*/
->>>>>>> main
 
 .header {
   position: relative;
@@ -187,8 +184,6 @@ a {
   width: 100%;
   list-style: none;
 }
-
-
 
 
 .navside{
