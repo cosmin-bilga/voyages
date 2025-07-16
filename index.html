@@ -25,34 +25,134 @@
         <header class="header">
           <h1 class="header__title">Voyages</h1>
           <nav class="header__nav">
+           
+           
             <ul class="header__nav-list">
+            
               <li>
-                <a href="#"
-                  ><img
+                    <input type="checkbox" id="check">
+            <label class=nav_btn for="check">
+                
+                  <img id=person
                     src="./assets/person-svgrepo-com (3).svg"
-                    alt="Personne"
-                /></a>
+                    alt="Personne"/>
+                 <div class="navside">
+                <ul class="navside_list">
+                    <li>
+                        <a href="grece.html"><p>Tourya</p></a> 
+                    </li>
+
+                    <li>
+                        <a href="maroc.html"><p>Chaymaa</p></a> 
+                    </li>
+
+                     <li>
+                       <a href="japon.html"><p>Samuël</p></a> 
+                    </li>
+
+                    <li>
+                        <a href="australie.html"> <p>Cosmin</p> </a>
+                    </li>
+                </ul>
+            </div>
+                </label>
               </li>
               <li>
-                <a href="#"
-                  ><img src="./assets/earth-svgrepo-com (6).svg" alt="Globe"
-                /></a>
+            <input type="checkbox" id="check2">
+            <label class=nav_btn2 for="check2">
+                
+                <img id="earth" src="./assets/earth-svgrepo-com (6).svg" alt="Globe"/>
+                                 <div class="navside2"> 
+                <ul class="navside_list2">
+                  <li>
+                       <a href="grece.html"> <p>Europe</p> </a>
+                    </li>
+
+                    <li>
+                        <a href="maroc.html"> <p>Afrique</p> </a>
+                    </li>
+
+                     <li>
+                       <a href="japon.html"><p>Asie</p> </a>
+                    </li>
+
+                    <li>
+                        <a href="australie.html"><p>Océanie</p> </a>
+                    </li>
+                </ul>
+                </div>
+          </label>
               </li>
               <li>
-                <a href="#"
+                <a href="contact.html"
                   ><img
                     src="./assets/contact-details-svgrepo-com (2).svg"
                     alt="Contact"
                 /></a>
               </li>
             </ul>
+           
+           
+            
           </nav>
           <p class="header__credits">Par Cosmin - Chaymaa - Tourya - Samuel</p>
         </header>
       </body>
     </html>
 
-    <main></main>
+    <main>
+      <!-- Section À propos -->
+      <section class="about">
+        <h2 class="section-title">À propos</h2>
+        <p>
+          Bienvenue sur notre blog de voyage ! Découvrez nos aventures, conseils
+          et photos autour du monde. Suivez-nous pour rêver et partir plus loin.
+        </p>
+      </section>
+
+      <!-- Section Galerie défilante -->
+      <section class="gallery">
+        <h2 class="section-title">📸 Galerie de nos aventures</h2>
+
+        <div class="photo-carousel">
+          <div class="carousel-track">
+            <figure><img src="./assets/photo1.jpg" alt="Photo 1" /></figure>
+            <figure><img src="./assets/photo2.jpg" alt="Photo 2" /></figure>
+            <figure><img src="./assets/photo3.jpg" alt="Photo 3" /></figure>
+            <figure><img src="./assets/photo4.jpg" alt="Photo 4" /></figure>
+            <figure>
+              <img src="./assets/background_header.jpg" alt="Photo 5" />
+            </figure>
+            <!-- On répète pour effet infini -->
+            <figure><img src="./assets/photo1.jpg" alt="Photo 1" /></figure>
+            <figure><img src="./assets/photo2.jpg" alt="Photo 2" /></figure>
+            <figure><img src="./assets/photo3.jpg" alt="Photo 3" /></figure>
+            <figure><img src="./assets/photo4.jpg" alt="Photo 4" /></figure>
+            <figure>
+              <img src="./assets/background_header.jpg" alt="Photo 5" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Conseils -->
+      <section class="tips">
+        <h2 class="section-title">Conseils de voyage</h2>
+        <ul class="tips__list">
+          <li>🧳 Bien préparer sa valise</li>
+          <li>🌐 Gérer internet à l’étranger</li>
+          <li>💸 Voyager avec un petit budget</li>
+        </ul>
+      </section>
+
+      <!-- Section Destination ou Bonus -->
+      <section class="favorites">
+        <h2 class="section-title">
+          Destinations favorites: c'est juste un exemple
+        </h2>
+        <p>Découvrez nos lieux préférés aux quatre coins du monde !</p>
+      </section>
+    </main>
 
     <footer class="footer"></footer>
   </body>
