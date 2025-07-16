@@ -176,3 +176,11 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
   transform: translate(0px);
 }
 
+@media (min-width:992px) 
+{
+
+  .navside{
+    display: none;
+  }
+
+}
