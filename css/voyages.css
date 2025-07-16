@@ -10,6 +10,10 @@ a {
   color: white;
 }
 
+        /* ========
+            HEADER 
+          ========*/
+
 .header {
   position: relative;
   background-image: url("../assets/background_header.jpg");
@@ -65,7 +69,7 @@ a {
   /* souligné mon text  */
 }
 
-
+/* navside person */
 .navside li{
   width: 100vw;
   border-bottom: white solid 1px;
@@ -116,6 +120,8 @@ input[type="checkbox"]:checked ~ .nav_btn > .navside {
   transform: translate(0px);
 }
 
+
+/* navside earth */
 .navside2 li{
   width: 100vw;
   border-bottom: white solid 1px;
