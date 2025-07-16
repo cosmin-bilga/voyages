@@ -48,10 +48,23 @@ details > summary {
 .section-information
 {
     display: flex;
-    flex-direction: column;
-    width: 5vw;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20vh;
+    align-items: center;
 }
 
+.section-category > summary
+{
+    background-color: gray;
+    width: 20vw;
+}
+
+.section-details
+{
+    position: relative;
+    top: 10vh;
+    left: 2.5vw;
+  
+}
 
