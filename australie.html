@@ -4,9 +4,484 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Australie, Terre de Feu</title>
-    <link rel="stylesheets" href="css/australie.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/australie.css">
+    <link rel="stylesheet" href="css/voyages.css">
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="header__title">Voyages</h1>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li>
+                    <input type="checkbox" id="check">
+                    <label class=nav_btn for="check">
+                        <img id=person src="./assets/person-svgrepo-com (3).svg" alt="Personne"/>
+                        <div class="navside">
+                            <ul class="navside_list">
+                                <li>
+                                    <a href="grece.html"><p>Tourya</p></a> 
+                                </li>
+                                <li>
+                                    <a href="maroc.html"><p>Chaymaa</p></a> 
+                                </li>
+                                <li>
+                                    <a href="japon.html"><p>Samuël</p></a> 
+                                </li>
+                                <li>
+                                    <a href="australie.html"> <p>Cosmin</p> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <input type="checkbox" id="check2">
+                    <label class=nav_btn2 for="check2">
+                        <img id="earth" src="./assets/earth-svgrepo-com (6).svg" alt="Globe"/>
+                        <div class="navside2"> 
+                            <ul class="navside_list2">
+                                <li>
+                                    <a href="grece.html">
+                                        <p>Europe</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="maroc.html">
+                                        <p>Afrique</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="japon.html">
+                                        <p>Asie</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="australie.html">
+                                        <p>Océanie</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <img src="./assets/contact-details-svgrepo-com (2).svg" alt="Contact"/>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p class="header__credits">Par Cosmin - Chaymaa - Tourya - Samuel</p>
+    </header>
+    <main>
+        <div class="country-information">
+            <div class="page-title">
+                <h1>Australie</h1>
+            </div>
+            <div class="country-information-body">
+                <p>★ Avec une superficie de 7 741 200 km2, l'Australie est le plus grand pays d'Océanie et le sixième plus grand pays du monde. En juin 2024, le pays atteint 27 204 809 habitants.</p>
+                <p>★ Son territoire continental est plat et sec, avec des sols peu fertiles. L'Australie est un pays mégadivers et sa taille lui confère une grande variété de paysages et de climats, avec des déserts au centre, des forêts tropicales humides au nord-est et des chaînes de montagnes au sud-est.</p>
+                <p>★ Bien que la majeure partie du pays soit désertique ou semi-aride, l’Australie (Tasmanie comprise) ne manque pas d’habitats naturels diversifiés pour accueillir différentes espèces animales et végétales.</p>
+                <p>★ Pour une partie des animaux de ce continent, les scientifiques parlent de mégafaune australienne. Du fait du climat très variable de ce territoire, de son isolement très long, une faune et une flore particulières ont pu se développer, tels que les oiseaux aptères (émeu), ou les mammifères monotrèmes (ovipares) et marsupiaux (à poche marsupiale ou marsupium), ayant précédé dans l'évolution les mammifères placentaires.</p>
+                <p>★ L'Australie compte 26,8 millions d'habitants en septembre 2023[151], avec une croissance démographique annuelle estimée à 2,5 %. </p>
+                <p>★ Depuis 1788, une grande partie de la culture australienne dérive de racines anglo-celtiques. Au cours des cinquante dernières années, la culture australienne a été fortement influencée par la culture populaire américaine (surtout cinéma et télévision) et par l'arrivée de sept millions d'immigrés de tous les continents du monde. Les grandes villes comme Sydney ou Melbourne sont aujourd'hui très cosmopolites, des spécificités australiennes sont apparues par suite de l’environnement, de la culture aborigène et de l’influence des pays voisins. La vigueur et l’originalité des arts australiens (littérature, cinéma, opéra, musique, peinture, théâtre, danse, artisanat) lui valent aujourd’hui une reconnaissance internationale. </p>
+                <div class="country-img-container">
+                    <img src="https://static.independent.co.uk/2023/12/06/15/iStock-926529270.jpg?quality=75&width=1368&crop=3%3A2%2Csmart&auto=webp">
+                </div>
+            </div>
+        </div>
+        <div class="sections-container">
+            <section>
+                <h2>K'Gari</h2>
+                <div class="section-information">
+                    <!------ radio buttons -->
+                    <input type="radio" id="sec-info" name="section-selection" checked>
+                    <label for="sec-info">Informations</label>
+                    <input type="radio" id="sec-directions" name="section-selection" unchecked>
+                    <label for="sec-directions">Se rendre à DESTINATION</label>
+                    <input type="radio" id="sec-periodes" name="section-selection" unchecked>
+                    <label for="sec-periodes">Conseils de frequentation</label>
+                    <div class="section-details" id="section-details-info">
+                        <p>Partez à l'aventure sur la plus grande île de sable au monde ; un voyage qui vous laissera un souvenir inoubliable.</p>
+                        <p>Île entièrement faite de sable, K'gari (anciennement Fraser Island), classée au patrimoine mondial, offre des surprises à chaque détour.</p>
+                        <p>Quelques minutes après avoir atterri sur K'Gari, vous en ressentirez déjà la magie.</p>
+                        <p>Roulez cheveux au vent sur d'immenses plages, émerveillez-vous devant les dunes de sable en perpétuel changement, nagez dans des eaux irisées et observez la faune marine en train de jouer à quelques mètres du rivage.</p>
+                        <p>Avec un choix de complexes touristiques et de camping en pleine nature, l'aventure est accessible à tous.</p>
+                        <div class="image-illustrative">
+                            <img src="//staging-jubilee.flickr.com/5774/23500266373_d59feaf77a_z.jpg">
+                        </div>
+                    </div>
+                    <div class="section-details" id="section-details-directions">
+                        <p>Comme aucun pont ne relie K'gari au continent, vous devrez prendre un ferry ou un vol touristique depuis Hervey Bay ou Rainbow Beach.</p>
+                        <p>Les ferries partent de River Heads (20 minutes au sud de Hervey Bay) et d'Inskip Point (juste au nord de Rainbow Beach), et transportent à la fois des passagers et des véhicules 4x4.</p> 
+                        <p>Les trajets en ferry ne durent que 30 minutes environ, selon les lieux de départ et d'arrivée.</p>
+                        <p>Air Fraser Island assure des vols quotidiens vers K'gari depuis les aéroports de Hervey Bay et de Sunshine Coast.</p>
+                        <p>Il est important de souligner que seuls les véhicules 4 x 4 sont autorisés sur K'gari. Vous pouvez en louer un, ou réserver une excursion et vous laisser conduire. </p>
+                        <div class="image-illustrative">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/52/76/c2/custom-built-4wd-coaches.jpg?w=2400&h=1800&s=1">
+                        </div>
+                    </div>
+                    <div class="section-details" id="section-details-periodes">
+                        <p>En raison de sa proximité avec le Tropique du Capricorne, la température à K'gari est douce toute l'année.</p>
+                        <p>Les mois d'été sont ceux où il pleut le plus. Veillez donc à emporter un imperméable léger si vous voyagez pendant cette période.</p>
+                        <p>K'gari est un terrain de jeu pour la faune sauvage, où l'on peut observer les baleines pendant les mois d'hiver et les bébés dingo entre juin et novembre (gardez toujours vos distances !).</p> 
+                        <ul>
+                            <li>Haute saison : printemps (de septembre à novembre)</li>
+                            <li>Basse saison : hiver (de juin à août)</li>
+                        </ul>
+                        <p>À ne pas manquer : la migration annuelle des baleines (de fin juin à début septembre)</p>
+                        <div class="image-illustrative">
+                            <img src="https://dundeeadventure.com/wp-content/uploads/2024/11/kgari-safari-fraser-island-tour-nomads-fraser-island-east-coast-australia-3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <h2>A faire à K'Gari</h2>
+                <div class="section-a-faire">
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/brisbane-and-surrounds/guide-to-kgari/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Se baigner dans un lac parfumé aux huiles essentielles.</p>
+                        <p>Au cœur de la forêt tropicale se trouve une multitude de lacs magnifiques, dont l'idyllique Lake McKenzie.</p>
+                        <p>Entouré d'arbres à thé, il réverbère sur le sable de silice blanc les nuances bleutées de ses eaux turquoises, créant ainsi un sanctuaire parfait </p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/brisbane-and-surrounds/guide-to-kgari/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_1921106317/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Empruntez des pistes passionnantes en 4 x 4</p>
+                        <p>Lorsqu'il s'agit de road trips, rien ne vaut l'exaltation procurée par la conduite sur une plage de sable blanc bordée de vagues d'un bleu intense. Sur K'Gari, c'est la seule chose qui compte.</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/brisbane-and-surrounds/guide-to-kgari/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_245422404/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>D'août à octobre, vous ne serez pas les seuls à passer des vacances à K'Gari.</p>
+                        <p>Cette baie protégée est la destination idéale pour des milliers de baleines à bosse et leurs baleineaux nouvellement nés.</p>
+                    </div>
+                    <!-------------DOUBLE POUR CAROUSEL-->
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/brisbane-and-surrounds/guide-to-kgari/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Se baigner dans un lac parfumé aux huiles essentielles.</p>
+                        <p>Au cœur de la forêt tropicale se trouve une multitude de lacs magnifiques, dont l'idyllique Lake McKenzie.</p>
+                        <p>Entouré d'arbres à thé, il réverbère sur le sable de silice blanc les nuances bleutées de ses eaux turquoises, créant ainsi un sanctuaire parfait </p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/brisbane-and-surrounds/guide-to-kgari/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_1921106317/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Empruntez des pistes passionnantes en 4 x 4</p>
+                        <p>Lorsqu'il s'agit de road trips, rien ne vaut l'exaltation procurée par la conduite sur une plage de sable blanc bordée de vagues d'un bleu intense. Sur K'Gari, c'est la seule chose qui compte.</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/brisbane-and-surrounds/guide-to-kgari/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_245422404/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>D'août à octobre, vous ne serez pas les seuls à passer des vacances à K'Gari.</p>
+                        <p>Cette baie protégée est la destination idéale pour des milliers de baleines à bosse et leurs baleineaux nouvellement nés.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Sydney</h2>
+                <div class="section-information">
+                    <!------ radio buttons -->
+                    <input type="radio" id="sec-info-sydney" name="section-selection" checked>
+                    <label for="sec-info-sydney">Informations</label>
+                    <input type="radio" id="sec-directions-sydney" name="section-selection" unchecked>
+                    <label for="sec-directions-sydney">Se rendre à DESTINATION</label>
+                    <input type="radio" id="sec-periodes-sydney" name="section-selection" unchecked>
+                    <label for="sec-periodes-sydney">Conseils de frequentation</label>
+                    <div class="section-details" id="section-details-info-sydney">
+                        <p>Ville aux attractions emblématiques et aux plages magnifiques, Sydney est une destination que vous n'oublierez jamais.</p>
+                        <p>Sydney abrite des sites incontournables comme le Sydney Harbour Bridge et l'opéra, mais cette ville portuaire est en constante évolution.</p>
+                        <p>De nouveaux bars rooftops, spectacles de théâtre et boutiques de créateurs apparaissent à chaque coin de rue, et l'agitation urbaine est parfaitement compensée par les après-midi passés sur le sable.</p>
+                        <p>En outre, étant située à proximité de diverses destinations, Sydney est le point de départ idéal pour des excursions d'une journée ou des escapades d'un week-end.</p>
+                        <div class="image-illustrative">
+                            <img src="https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/qrt1zjeqpyhfvx6lngav.jpg">
+                        </div>
+                    </div>
+                    <div class="section-details" id="section-details-directions-sydney">
+                        <p>Étant l'une des principales villes d'Australie, il est facile de se rendre à Sydney grâce aux nombreux vols internationaux et nationaux qui y atterrissent quotidiennement.</p>
+                        <p>L'aéroport de Sydney Kingsford Smith (SYD) est situé à 9 km de la ville et accueille des vols intérieurs et internationaux.</p>
+                        <p>Des voitures de location, des services de covoiturage, des taxis et des navettes sont disponibles à la réservation avant votre arrivée ou le jour même.</p>
+                        <p>L'aéroport de Sydney est également desservi par une ligne de train urbain reliant directement la ville.</p>
+                        <p>Sydney offre des services de transports publics propres, fiables et abordables qui relient toutes les banlieues de la ville.</p>
+                        <div class="image-illustrative">
+                            <img src="https://images.ctfassets.net/v228i5y5k0x4/59hZZWimPu0YCy0UEyquWs/4e591a075ff47b364dfd668c5153040a/MARKETPLACE_T1_EXTERNAL_SYDNEY_AIRPORT_170118_KURT_AMS_9408.jpg">
+                        </div>
+                    </div>
+                    <div class="section-details" id="section-details-periodes-sydney">
+                        <p>En ce qui concerne la météo, le temps à Sydney est assez prévisible et il existe quatre saisons distinctes.</p>
+                        <p>Les mois les plus chauds sont en général de novembre à février, tandis que les mois les plus frais sont de mars à août.</p>
+                        <p>Même si vous visitez la ville pendant les mois les plus frais, n'oubliez pas d'emporter un maillot de bain, car les journées chaudes et ensoleillées ne sont pas rares en hiver.</p>
+                        <ul>
+                            <li>Haute saison : printemps et été (de novembre à février)</li>
+                            <li>Basse saison : hiver (de juin à août)</li>
+                        </ul>
+                        <p>À ne pas manquer : la longue liste des festivals et des événements se déroulant tout au long de l'année. </p>
+                        <div class="image-illustrative">
+                            <img src="https://images.ctfassets.net/rc3dlxapnu6k/7lK7pYO6Jz55e4QYLe866H/eae8718c8821861eae8fb79de780dafb/Best-City-Sydney-1.jpg?w=1400&q=60&fm=webp">
+                        </div>
+                    </div>
+                </div>
+                <h2>A faire à Sydney</h2>
+                <div class="section-a-faire">
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/sydney-and-surrounds/guide-to-sydney/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_835593945/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Passez la journée à l'Opéra de Sydney</p>
+                        <p>Dînez dans un restaurant de renommée mondiale, assistez à un spectacle ou visitez les coulisses, retenez des informations historiques ainsi que des anecdotes amusantes sur les célébrités.</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/sydney-and-surrounds/guide-to-sydney/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Découvrez les meilleures plages de Sydney</p>
+                        <p>Qu'il s'agisse de faire du surf sur la célèbre Bondi Beach ou de trouver des endroits isolés pour faire du paddleboard sur les eaux calmes du port, vous n'aurez que l'embarras du choix parmi les magnifiques plages de Sydney.</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/sydney-and-surrounds/guide-to-sydney/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_937565007/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Découvrez le charme des Blue Mountains</p>
+                        <p>Des villages pittoresques, des formations rocheuses imposantes et des forêts anciennes vous attendent à moins de deux heures de la ville.</p>
+                        <p>Cap sur le bush et profitez des vues panoramiques depuis l'un des points de vue spectaculaires.</p>
+                    </div>
+                    <!-------------DOUBLE POUR CAROUSEL-->
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/sydney-and-surrounds/guide-to-sydney/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_835593945/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Passez la journée à l'Opéra de Sydney</p>
+                        <p>Dînez dans un restaurant de renommée mondiale, assistez à un spectacle ou visitez les coulisses, retenez des informations historiques ainsi que des anecdotes amusantes sur les célébrités.</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/sydney-and-surrounds/guide-to-sydney/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Découvrez les meilleures plages de Sydney</p>
+                        <p>Qu'il s'agisse de faire du surf sur la célèbre Bondi Beach ou de trouver des endroits isolés pour faire du paddleboard sur les eaux calmes du port, vous n'aurez que l'embarras du choix parmi les magnifiques plages de Sydney.</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/sydney-and-surrounds/guide-to-sydney/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_937565007/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Découvrez le charme des Blue Mountains</p>
+                        <p>Des villages pittoresques, des formations rocheuses imposantes et des forêts anciennes vous attendent à moins de deux heures de la ville.</p>
+                        <p>Cap sur le bush et profitez des vues panoramiques depuis l'un des points de vue spectaculaires.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>La Grande Barrière de Corail</h2>
+                <div class="section-information">
+                    <!------ radio buttons -->
+                    <input type="radio" id="sec-info-recif" name="section-selection" checked>
+                    <label for="sec-info-recif">Informations</label>
+                    <input type="radio" id="sec-directions-recif" name="section-selection" unchecked>
+                    <label for="sec-directions-recif">Se rendre à DESTINATION</label>
+                    <input type="radio" id="sec-periodes-recif" name="section-selection" unchecked>
+                    <label for="sec-periodes-recif">Conseils de frequentation</label>
+                    <div class="section-details" id="section-details-info-recif">
+                        <p>Plongez au cœur de la Grande Barrière de Corail et vous comprendrez pourquoi la plupart des gens ont ajouté cette destination australienne à leur liste des incontournables.</p>
+                        <p>S'étendant sur plus de 2 300 km le long de la côte est de l'Australie, la Grande Barrière de Corail offre une multitude d'expériences côtières uniques au monde.</p>
+                        <p>Nagez parmi les étonnantes formations coralliennes, les palourdes géantes, les espèces rares de baleines et six des sept espèces de tortues marines du monde.</p>
+                        <p>Sans oublier plus de 1 600 espèces de poissons qui vivent dans ce merveilleux paradis aquatique.</p>
+                        <p>Que vous aimiez pratiquer la plongée sous-marine dans les profondeurs de l'océan ou profiter du soleil sur le sable doux d'une île, découvrez pourquoi la Grande Barrière de Corail est la destination idéale de votre prochaine escapade.</p>
+                        <div class="image-illustrative">
+                            <img src="https://static.euronews.com/articles/stories/06/57/11/14/1366x768_cmsv2_db056e76-d2ff-5d26-a070-aa80f0d8b3fa-6571114.jpg">
+                        </div>
+                    </div>
+                    <div class="section-details" id="section-details-directions-recif">
+                        <p>Les points d'accès à la Grande Barrière de Corail sont disséminés entre Cape York, la ville la plus au nord, et Bundaberg, la ville côtière la plus au sud.</p>
+                        <p>Les cinq aéroports les plus populaires menant au récif sont les suivants :</p>
+                        <ul>
+                            <li>L'aéroport de Cairns (CNS) est situé à 5,5 km de Cairns et accueille des vols intérieurs et internationaux.</li>
+                            <li>L'aéroport de Townsville (TSV) est situé à 5 km de Townsville et accueille des vols intérieurs.</li>
+                            <li>L'aéroport de Proserpine (PPP) est situé à 39 km d'Airlie Beach et accueille des vols intérieurs.</li>
+                            <li>L'aéroport régional de Bundaberg (BDB) est situé à 6 km de Bundaberg et accueille des vols intérieurs.</li>
+                            <li>L'aéroport d'Hamilton Island (HTI) atterrit directement sur Hamilton Island dans les îles Whitsundays et accueille des vols intérieurs.</li>
+                        </ul>
+                        <p>Chaque aéroport propose des transferts pré-réservés, des taxis et des options de location de voiture ou de buggy.</p>
+                        <div class="image-illustrative">
+                            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=620,height=400,dpr=2/tour_img/f9cae06fe9b8bebdd64abf9dee31154b231b1a680760e48d4ee7c402fe9210c0.jpg">
+                        </div>
+                    </div>
+                    <div class="section-details" id="section-details-periodes-recif">
+                        <p>Compte tenu de la taille du récif, vous trouverez des différences de climat selon l'endroit où vous allez.</p>
+                        <p>En général, la période de mai à octobre est idéale pour visiter le récif car l'eau est encore assez chaude pour se baigner et la visibilité sous-marine est optimale.</p>
+                        <ul>
+                            <li>Haute saison : hiver (de juin à août)</li>
+                            <li>Basse saison : été (de décembre à février)</li>
+                        </ul>
+                        <p>À ne pas manquer : l'éclosion des œufs de tortues (de janvier à mars).</p>
+                        <div class="image-illustrative">
+                            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=300,height=195,dpr=2/tour_img/637d7a326b1c1.jpeg">
+                        </div>
+                    </div>
+                </div>
+                <h2>A faire à la Grande Barrière de Corail</h2>
+                <div class="section-a-faire">
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/cairns-and-surrounds/guide-to-the-great-barrier-reef/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_1693367837/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Faire le lien entre culture et conservation</p>
+                        <p>Rendez-vous sous l'eau pour explorer la seule galerie d'art immergée de l'hémisphère sud.</p>
+                        <p>Avec pour mission de promouvoir la conservation et la restauration, c'est l'occasion d'explorer la beauté du récif tout en préservant cet écosystème si particulier.</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/cairns-and-surrounds/guide-to-the-great-barrier-reef/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Protéger cette merveille naturelle</p>
+                        <p>Les visiteurs de la Grande Barrière de Corail jouent un rôle important dans la protection de ce site emblématique.</p>
+                        <p>Il existe de nombreuses idées de vacances et d'excursions ayant un impact minimal et mettant l'accent sur la conservation</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/cairns-and-surrounds/guide-to-the-great-barrier-reef/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_628059450/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Vivre une expérience unique</p>
+                        <p>Le simple fait de visiter le récif est une expérience incontournable pour la plupart des gens.</p>
+                        <p>Mais au-delà de la plongée avec masque et tuba ou de la plongée sous-marine, il existe des moyens vraiment uniques de découvrir cette merveille naturelle.</p>
+                    </div>
+                    <!-------------DOUBLE POUR CAROUSEL-->
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/cairns-and-surrounds/guide-to-the-great-barrier-reef/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_1693367837/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Faire le lien entre culture et conservation</p>
+                        <p>Rendez-vous sous l'eau pour explorer la seule galerie d'art immergée de l'hémisphère sud.</p>
+                        <p>Avec pour mission de promouvoir la conservation et la restauration, c'est l'occasion d'explorer la beauté du récif tout en préservant cet écosystème si particulier.</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/cairns-and-surrounds/guide-to-the-great-barrier-reef/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Protéger cette merveille naturelle</p>
+                        <p>Les visiteurs de la Grande Barrière de Corail jouent un rôle important dans la protection de ce site emblématique.</p>
+                        <p>Il existe de nombreuses idées de vacances et d'excursions ayant un impact minimal et mettant l'accent sur la conservation</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/cairns-and-surrounds/guide-to-the-great-barrier-reef/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_628059450/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Vivre une expérience unique</p>
+                        <p>Le simple fait de visiter le récif est une expérience incontournable pour la plupart des gens.</p>
+                        <p>Mais au-delà de la plongée avec masque et tuba ou de la plongée sous-marine, il existe des moyens vraiment uniques de découvrir cette merveille naturelle.</p>
+                    </div>
+                </div>
+            </section>
+             <section>
+                <h2>Uluru et de Kata Tjuta</h2>
+                <div class="section-information">
+                    <!------ radio buttons -->
+                    <input type="radio" id="sec-info-uluru" name="section-selection" checked>
+                    <label for="sec-info-uluru">Informations</label>
+                    <input type="radio" id="sec-directions-uluru" name="section-selection" unchecked>
+                    <label for="sec-directions-uluru">Se rendre à DESTINATION</label>
+                    <input type="radio" id="sec-periodes-uluru" name="section-selection" unchecked>
+                    <label for="sec-periodes-uluru">Conseils de frequentation</label>
+                    <div class="section-details" id="section-details-info-uluru">
+                        <p>Les anciennes formations rocheuses d'Uluru et de Kata Tjuta se détachent de la plaine pour créer des paysages incroyables. Plongez dans les légendes aborigènes de cet endroit magique, né il y a 500 millions d'années.</p>
+                        <p>Le spectaculaire Uluru-Kata Tjuta National Park est au cœur du Centre Rouge de l'Australie.</p>
+                        <p>Abritant de nombreuses merveilles anciennes, le parc est surtout connu pour les énormes monolithes dont il porte le nom.</p>
+                        <p>Uluru et Kata Tjuta dressent leur majestueuse beauté rouge à seulement 30 km l'un de l'autre.</p>
+                        <p>Mesurant 348 m de haut et 9,5 km de circonférence, Uluru est le plus grand monolithe de grès du monde, tandis que Kata Tjuta est composé de 36 dômes géants répartis sur plus de 20 km.</p>
+                        <p>Les deux sites demeurent profondément spirituels et sacrés pour le peuple Anangu, qui vit ici depuis plus de 30 000 ans.</p>
+                        <div class="image-illustrative">
+                            <img src="https://uluru.gov.au/static/9b3313474240d0ba04f3d5f19c7d5c84/eb642/uluru-credit-meegan-ebert-hero.webp">
+                        </div>
+                    </div>
+                    <div class="section-details" id="section-details-directions-uluru">
+                        <p>Pour se rendre au Uluru-Kata Tjuta National Park, il faut prendre l'avion jusqu'à l'aéroport d'Ayers Rock ou d'Alice Springs.</p>
+                        <ul>
+                            <li>L'aéroport d'Ayers Rock (AYQ) est situé à 30 km d'Uluru (environ 30 minutes)</li>
+                            <li>L'aéroport d'Alice Springs (ASP) est situé à 337 km d'Uluru (environ 4,5 heures)</li>
+                        </ul>
+                        <p>Des visites de groupes et des options de location de voitures sont disponibles dans les deux aéroports, mais pensez à réserver à l'avance pour éviter les déceptions.</p>
+                        <p>Il n'y a pas de taxis ni de transports en commun autour d'Uluru, mais toutes les routes sont goudronnées et faciles d'accès avec un véhicule standard.</p>
+                        <p>Si vous préférez laisser quelqu'un d'autre conduire, participez à une excursion en groupe ou achetez un pass pour le bus Uluru Hop On Hop Off bus (à montée et descente libres).</p>
+                        <div class="image-illustrative">
+                            <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=620,height=400,dpr=2/tour_img/5b456c4d03923.png">
+                        </div>
+                    </div>
+                    <div class="section-details" id="section-details-periodes-uluru">
+                        <p>La meilleure période pour visiter Uluru et Kata Tjuta est entre mai et septembre, lorsque la température se situe dans une moyenne agréable de 20 °C à 30 °C.</p>
+                        <p>Le temps frais et sec permet de mieux profiter des activités telles que la marche et les promenades à dos de chameau.</p>
+                        <ul>
+                            <li>Haute saison : Saison sèche (mai à septembre)</li>
+                            <li>Basse saison : Saison humide (octobre à avril)</li>
+                        </ul>
+                        <p>À ne pas manquer : une promenade au Field of Light, entouré de 50 000 ampoules illuminées.</p>          
+                        <div class="image-illustrative">
+                            <img src="https://cdn.getyourguide.com/image/format=auto,fit=contain,gravity=auto,quality=60,width=1440,height=650,dpr=2/tour_img/51bfdd6c904f6.jpeg">
+                        </div>
+                    </div>
+                </div>
+                <h2>A faire à à Uluru et Kata Tjuta</h2>
+                <div class="section-a-faire">
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/alice-springs-and-surrounds/guide-to-uluru-and-kata-tjuta/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_235574662/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Admirez un spectacle dans le ciel</p>
+                        <p>Regardez les lumières danser au-dessus d'Uluru au cours d'une soirée à Wintjiri Wiru.</p>
+                        <p>Cette expérience immersive relate une histoire ancestrale des anciens Anangu au-dessus du célèbre monolithe du Centre Rouge, avec des lumières, des lasers...</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/alice-springs-and-surrounds/guide-to-uluru-and-kata-tjuta/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_1233661536/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Apprenez la culture locale</p>
+                        <p>Plongez dans la culture Anangu locale en visitant le centre culturel, un établissement primé.</p>
+                        <p>Rendez-vous ensuite dans les deux galeries sur site, Maruku Arts et Walkatjara Art, pour contempler des œuvres d'art aborigènes.</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/alice-springs-and-surrounds/guide-to-uluru-and-kata-tjuta/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_879958389/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Vivre une expérience unique</p>
+                        <p>Le simple fait de visiter le récif est une expérience incontournable pour la plupart des gens.</p>
+                        <p>Mais au-delà de la plongée avec masque et tuba ou de la plongée sous-marine, il existe des moyens vraiment uniques de découvrir cette merveille naturelle.</p>
+                    </div>
+                    <!-------------DOUBLE POUR CAROUSEL-->
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/alice-springs-and-surrounds/guide-to-uluru-and-kata-tjuta/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_235574662/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Admirez un spectacle dans le ciel</p>
+                        <p>Regardez les lumières danser au-dessus d'Uluru au cours d'une soirée à Wintjiri Wiru.</p>
+                        <p>Cette expérience immersive relate une histoire ancestrale des anciens Anangu au-dessus du célèbre monolithe du Centre Rouge, avec des lumières, des lasers...</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/alice-springs-and-surrounds/guide-to-uluru-and-kata-tjuta/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_1233661536/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Apprenez la culture locale</p>
+                        <p>Plongez dans la culture Anangu locale en visitant le centre culturel, un établissement primé.</p>
+                        <p>Rendez-vous ensuite dans les deux galeries sur site, Maruku Arts et Walkatjara Art, pour contempler des œuvres d'art aborigènes.</p>
+                    </div>
+                    <div class="section-a-faire-element">
+                        <div class="section-a-faire-img">
+                            <img src="https://www.australia.com/content/australia/fr_fr/places/alice-springs-and-surrounds/guide-to-uluru-and-kata-tjuta/jcr:content/mainParsys/imagecontainer/imageContainerParsys/imagehighlights_879958389/ImageTile/imageHighlightsSrc.adapt.740.medium.jpg">
+                        </div>
+                        <p>Vivre une expérience unique</p>
+                        <p>Le simple fait de visiter le récif est une expérience incontournable pour la plupart des gens.</p>
+                        <p>Mais au-delà de la plongée avec masque et tuba ou de la plongée sous-marine, il existe des moyens vraiment uniques de découvrir cette merveille naturelle.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+    <!-- TODO PAGE PRINCIPALE -->
+    </footer>
 </body>
 </html>

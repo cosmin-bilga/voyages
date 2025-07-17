@@ -1,0 +1,369 @@
+body
+{
+    font-size: 1.5rem;
+    
+}
+
+main
+{
+    
+    background-image: url("../assets/images/australia-flag.webp");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.page-title
+{
+    width: calc(100% - 2vw);
+    background-color: rgba(255, 234, 0, 0.9);
+    border-radius: 15px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-shadow: 2px 2px 10px black;
+    background-repeat: no-repeat;
+    height: 20vh;
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.country-information
+{
+    background-color: rgba(165, 42, 42, 0.9);
+    color: white;
+    padding: 15px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 15px;
+   
+}
+
+
+/* COUNTRY GENERAL INFO */
+.country-information-body > p
+{
+    margin-top: 10px;
+}
+
+.country-img-container
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.country-img-container > img
+{
+    width:100%;
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+/* SECTION */
+
+.sections-container
+{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 15px;
+    margin-top: 2vh;
+}
+
+.sections-container label
+{
+    text-align: center;
+    background-color: gray;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.sections-container label:hover
+{
+    background-color: rgb(175, 174, 174);
+}
+
+.section-information
+{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(211, 211, 211, 0.9);
+}
+
+.section-information > label
+{
+    margin-top: 3vh;
+    font-weight: 900;
+}
+
+.section-information > .section-details
+{
+    width: 85%;
+}
+
+/*---------------------------
+Sections
+----------------------------- */
+
+
+#section-details-directions, #section-details-periodes
+{
+    display: none;
+}
+
+/* radio info */
+#sec-info:checked ~ #section-details-info
+{
+    display: block;
+}
+
+#sec-info:checked ~ #section-details-directions, #section-details-periodes
+{
+    display: none;
+}
+
+/* radio directions */
+#sec-directions:checked ~ #section-details-directions
+{
+    display: block;
+}
+
+#sec-directions:checked ~ #section-details-info, #section-details-periodes
+{
+    display: none;
+}
+
+/* radion periodes */
+#sec-periodes:checked ~ #section-details-periodes
+{
+    display: block;
+}
+
+#sec-periodes:checked ~ #section-details-info, #section-detials-directions
+{
+    display: none;
+}
+
+/*------------------- ULURU */
+#section-details-directions-uluru, #section-details-periodes-uluru
+{
+    display: none;
+}
+
+/* radio info */
+#sec-info-uluru:checked ~ #section-details-info-uluru
+{
+    display: block;
+}
+
+#sec-info-uluru:checked ~ #section-details-directions-uluru, #section-details-periodes-uluru
+{
+    display: none;
+}
+
+/* radio directions */
+#sec-directions-uluru:checked ~ #section-details-directions-uluru
+{
+    display: block;
+}
+
+#sec-directions-uluru:checked ~ #section-details-info-uluru, #section-details-periodes-uluru
+{
+    display: none;
+}
+
+/* radion periodes */
+#sec-periodes-uluru:checked ~ #section-details-periodes-uluru
+{
+    display: block;
+}
+
+#sec-periodes-uluru:checked ~ #section-details-info-uluru, #section-details-directions-uluru
+{
+    display: none;
+}
+
+
+/*------------------- RECIF */
+#section-details-directions-recif, #section-details-periodes-recif
+{
+    display: none;
+}
+
+/* radio info */
+#sec-info-recif:checked ~ #section-details-info-recif
+{
+    display: block;
+}
+
+#sec-info-recif:checked ~ #section-details-directions-recif, #section-details-periodes-recif
+{
+    display: none;
+}
+
+/* radio directions */
+#sec-directions-recif:checked ~ #section-details-directions-recif
+{
+    display: block;
+}
+
+#sec-directions-recif:checked ~ #section-details-info-recif, #section-details-periodes-recif
+{
+    display: none;
+}
+
+/* radion periodes */
+#sec-periodes-recif:checked ~ #section-details-periodes-recif
+{
+    display: block;
+}
+
+#sec-periodes-recif:checked ~ #section-details-info-recif, #section-details-directions-recif
+{
+    display: none;
+}
+
+/*------------------- SYDNEY */
+#section-details-directions-sydney, #section-details-periodes-sydney
+{
+    display: none;
+}
+
+/* radio info */
+#sec-info-sydney:checked ~ #section-details-info-sydney
+{
+    display: block;
+}
+
+#sec-info-sydney:checked ~ #section-details-directions-sydney, #section-details-periodes-sydney
+{
+    display: none;
+}
+
+/* radio directions */
+#sec-directions-sydney:checked ~ #section-details-directions-sydney
+{
+    display: block;
+}
+
+#sec-directions-sydney:checked ~ #section-details-info-sydney, #section-details-periodes-sydney
+{
+    display: none;
+}
+
+/* radion periodes */
+#sec-periodes-sydney:checked ~ #section-details-periodes-sydney
+{
+    display: block;
+}
+
+#sec-periodes-sydney:checked ~ #section-details-info-sydney, #section-details-directions-sydney
+{
+    display: none;
+}
+
+/* Section à faire */
+
+@keyframes AnimationCarousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.section-a-faire {
+  display: flex;
+  width: calc((25vw + 20px + 4vw) * 6);
+  min-width: calc(200px * 6);
+  animation: AnimationCarousel 30s linear infinite;
+}
+
+.section-a-faire:hover
+{
+    animation-play-state: paused;
+}
+
+.section-a-faire-element {
+  margin-right: 4vw;
+  width: 25vw;
+  min-width: 200px;
+  padding: 10px;
+  background-color: rgba(255, 234, 0, 0.9);
+  border-radius: 20px;
+}
+
+section img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-details > p
+{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.section-details > .image-illustrative
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vh;
+}
+
+.image-illustrative > img
+{ 
+    width: 100%;
+    max-width: 800px;
+}
+
+section > h2
+{
+    text-align: center;
+    height: 10vh;
+}
+
+section
+{
+    margin-bottom: 5vh;
+    background-color: rgba(251, 215, 34, 0.9);
+    border-radius: 20px;
+}
+
+section li
+{
+    margin-left: 3rem;
+}
+
+section img
+{
+    box-shadow: 2px 2px 6px black;
+}
+
+@media (width > 800px)
+{
+    main 
+    {
+        display:block;
+    }
+
+    .country-information
+    {
+        position: sticky; /*TO CHANGE*/
+        float:right;
+    }
+
+    .page-title
+    {
+        color: black;
+    }
+
+}
