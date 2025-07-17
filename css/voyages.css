@@ -21,7 +21,7 @@ a {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: darken;
