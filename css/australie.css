@@ -2,6 +2,7 @@ body
 {
     font-size: 1.5rem;
     width: 100vw;
+    overflow-x: hidden;
     
 }
 
@@ -283,6 +284,7 @@ Sections
   width: calc((25vw + 20px + 4vw) * 6);
   min-width: calc(200px * 6);
   animation: AnimationCarousel 30s linear infinite;
+
 }
 
 .section-a-faire:hover
@@ -297,6 +299,7 @@ Sections
   padding: 10px;
   background-color: rgba(255, 234, 0, 0.9);
   border-radius: 20px;
+  box-shadow: 1px 1px 4px black;
 }
 
 section img
@@ -351,16 +354,6 @@ section img
 
 @media (width > 800px)
 {
-    main 
-    {
-        display:block;
-    }
-
-    .country-information
-    {
-        position: sticky; /*TO CHANGE*/
-        float:right;
-    }
 
     .page-title
     {
