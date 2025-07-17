@@ -1,0 +1,193 @@
+/* ===  Changements au niveau du header pour l'adapter à ma page Maroc ===   */
+.header {
+  background-image: url("../assets/images/maroc/photo_background_header_maroc.jpg");
+}
+
+.navside,
+.navside2 {
+  background: url("../assets/images/maroc/photo_background_header_maroc.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* === MAIN === */
+main {
+  background: linear-gradient(135deg, #f2a3a3, #a3cfa3, #f2a3a3, #a3cfa3);
+  background-size: 400% 400%;
+}
+
+/* === HERO === */
+.maroc-hero {
+  text-align: center;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.maroc-hero__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: "Amatic SC", cursive;
+}
+
+.maroc-hero__subtitle {
+  font-size: 1.3rem;
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+}
+
+/* === POURQUOI VISITER === */
+.maroc-why {
+  padding: 2rem 1.5rem 0 1.5rem;
+}
+.maroc-why__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.maroc-why__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.card__img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+.card__content {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.card__title {
+  font-size: 1.2rem;
+}
+
+/* === GALERIE === */
+.maroc-gallery {
+  padding: 2rem 1rem;
+}
+.carousel {
+  overflow: hidden;
+  width: calc(
+    250px * 10
+  ); /* 10 images à changer si je vais ajouter d'autres images  */
+}
+
+.carousel__track {
+  display: flex;
+  animation: scrollGallery 50s linear infinite;
+  width: calc(250px * 10); /* en lien avec la precédente */
+}
+
+.carousel__track figure {
+  margin: 0 10px;
+  flex-shrink: 0;
+}
+
+.carousel__track img {
+  height: 180px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.maroc-gallery__title {
+  text-align: center;
+}
+
+/* === CONSEILS === */
+.maroc-tips {
+  background-image: url("../assets/images/maroc/patrimoine_culturel.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 3rem 1rem;
+}
+.maroc-tips::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.maroc-tips__title,
+.maroc-tips__list {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+.maroc-tips__list {
+  list-style: none;
+  font-size: 1rem;
+  padding: 1rem;
+  line-height: 1.5;
+}
+.maroc-tips__list--item {
+  margin: 1rem;
+}
+
+/* === SCROLL TOP === */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+.scroll-top:hover {
+  transform: scale(1.15);
+}
+
+/* === ANIMATION CAROUSEL === */
+@keyframes scrollGallery {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* === RESPONSIVE POUR LES CARTES === */
+@media (min-width: 600px) {
+  .maroc-why__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .maroc-why__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .header__title {
+    font-size: 6rem;
+  }
+
+  .maroc-why__title,
+  .maroc-gallery__title,
+  .maroc-tips__title,
+  .maroc-hero__title {
+    font-size: 3rem;
+  }
+  .maroc-hero__subtitle,
+  .maroc-tips__list--item {
+    font-size: 1.5rem;
+  }
+}

@@ -21,7 +21,7 @@ a {
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: darken;
@@ -211,10 +211,7 @@ a {
   list-style: none;
 }
 
-
-
-
-.navside{
+.navside {
   margin: 0%;
   transform: translate(10000px);
   justify-content: space-between;
@@ -228,6 +225,7 @@ a {
   width: 110vw;
   background: url("../assets/images/background_header.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 input {
@@ -261,10 +259,7 @@ input[type="checkbox"]:checked ~ .nav_btn > .navside {
   list-style: none;
 }
 
-
-
-
-.navside2{
+.navside2 {
   margin: 0%;
   transform: translate(10000px);
   justify-content: space-between;
@@ -278,6 +273,7 @@ input[type="checkbox"]:checked ~ .nav_btn > .navside {
   width: 110vw;
   background: url("../assets/images/photo6.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 input {
@@ -305,5 +301,4 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
   .navside {
     display: none;
   }
-
 }
