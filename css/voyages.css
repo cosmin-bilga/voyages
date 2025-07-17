@@ -373,6 +373,14 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .nav_align2 {
   display: block;
 }
 
+input[type="checkbox"]:checked ~ .nav_btn > .navside {
+  display: block;
+}
+
+input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
+  display: block;
+}
+
 
 
   }
