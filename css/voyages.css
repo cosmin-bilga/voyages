@@ -374,19 +374,12 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .nav_align2 {
 }
 
 input[type="checkbox"]:checked ~ .nav_btn > .navside {
-  display: block;
+  display: none;
 }
 
 input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
-  display: block;
+  display: none;
 }
 
+}
 
-
-  }
-
-  .block_third{
-    z-index: 5;
-    background: #222;
-    color: #fefefe;
-  }
