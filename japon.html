@@ -1,87 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"/>
     <title>Japon</title>
-</head>
-<body>
-    <header>
+    <link rel="stylesheet" href="./css/japon.css" />
+  </head>
 
-        <div class="navbar">
+      <body>
+        <header class="header">
+          <h1 class="header__title">Voyages</h1>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+            
+              <li class="navlign_person">
+                    <input type="checkbox" id="check">
+            <label class=nav_btn for="check">
+                
+                  <img id=person
+                    src="./assets/icones/person.svg"
+                    alt="Personne"/>
+                                     
+                        <ul class="nav_align">
 
-            <ul class="nav">
+                          <li id="tourya">
+                            <a href="grece.html">Tourya</a> 
+                          </li>
 
-                <li>
+                          <li>
+                           <a href="maroc.html">Chaymaa</a> 
+                          </li>
 
-                </li>
-                <li>
+                          <li>
+                              <a href="japon.html">Samuël</a> 
+                          </li>
 
-                </li>
-                <li>
+                          <li id="cosmin">
+                            <a href="australie.html"> Cosmin </a>
+                          </li>
 
-                </li>
+                        </ul>
+                        
+                      
+
+                      
+
+                 <div class="navside">
+
+                <ul class="navside_list">
+                    <li>
+                        <a href="grece.html"><p>Tourya</p></a> 
+                    </li>
+
+                      <li>
+                        <a href="maroc.html"><p>Chaymaa</p></a>
+                      </li>
+
+                      <li>
+                        <a href="japon.html"><p>Samuël</p></a>
+                      </li>
+
+                      <li>
+                        <a href="australie.html"> <p>Cosmin</p> </a>
+                      </li>
+                    </ul>
+                  </div>
+                </label>
+              </li>
+              <li class="navlign_earth">
+            <input type="checkbox" id="check2">
+            <label class=nav_btn2 for="check2">
+                
+                <img id="earth" src="./assets/icones/earth.svg" alt="Globe"/>
+
+                            <ul class="nav_align2">
+
+                          <li id="tourya">
+                            <a href="grece.html">Europe</a> 
+                          </li>
+
+                          <li>
+                           <a href="maroc.html">Afrique</a> 
+                          </li>
+
+                          <li>
+                              <a href="japon.html">Asie</a> 
+                          </li>
+
+                          <li id="cosmin">
+                            <a href="australie.html"> Australie </a>
+                          </li>
+
+                        </ul>
+
+                                 <div class="navside2"> 
+                <ul class="navside_list2">
+                  <li>
+                       <a href="grece.html"> <p>Europe</p> </a>
+                    </li>
+
+                      <li>
+                        <a href="maroc.html"> <p>Afrique</p> </a>
+                      </li>
+
+                      <li>
+                        <a href="japon.html"><p>Asie</p> </a>
+                      </li>
+
+                      <li>
+                        <a href="australie.html"><p>Océanie</p> </a>
+                      </li>
+                    </ul>
+                  </div>
+                </label>
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><img src="./assets/icones/contact.svg" alt="Contact"
+                /></a>
+              </li>
             </ul>
-
-        </div>
-
-    </header>
+          </nav>
+          <p class="header__credits">Par Cosmin - Chaymaa - Tourya - Samuel</p>
+        </header>
+ 
 
     <main>
-    <div class="block_main">
+      <!-- Flag Section  -->
+      <section class="flag">
+        
+      </section>
 
-        <section class="hero">
+      <!-- Abour Section -->
+      <section class="about">
+        <div class="block_about">
+            <h1 id="title_about">A propos</h1>
+            <p>Le jaopon un pays magnique plein de belle proposition</p>
+           <details>
+            <summary>
+            <img class="about_img" src="https://wallpaperaccess.com/full/276749.jpg" alt="">
+            </summary>
+                            <div class="content_about">
+                <p>Pourquoi le Japon ?</p>
+                <p> Le Japon offre une culture riche et variée, avec des traditions anciennes et des festivals colorés.  </p>
+          
+              </div>
+            </details>
+        </div>
+      </section>
 
-            <div class="block_1">
+      <!-- Section Conseils -->
+      <section class="second">
+        <div class="black_second">
+            <h1 id="title_second">Nos plus belle ville</h1>
+            <p>Choissiez votre destination entre Tokyo et Kyoto</p>
+        <div class="choice">
+            <details> 
+              <summary>
+                <img class="second1_img" src="https://wallpaperaccess.com/full/511669.jpg" alt=""> 
+              </summary>
+              <div class="content1">
+                <p>Pourquoi Tokyo ?</p>
+                <p>Pour sa culture surprenante, sa vie nocturne animée, sa gastronomie exotique, pour être entourés de 35 millions de personnes ou simplement faire du shopping... </p>
+          
+              </div>
+            </details>
+          <details> 
+              <summary>
+            <img class="second2_img" src="https://wallpapercave.com/wp/wp6956104.jpg" alt="">
+               </summary>
+                <div class="content2">
+                <p>Pourquoi Kyoto ?</p>
+                <p>Pour sa culture traditionelle, sa vie crépusculaire, sa gastronomie exotique, pour être apaisé par les environnemeny ou simplement faire se ballader... </p>
                 
+              </div>
+          </details>
+        </div>
+        </div>
+      </section>
+
+        <section class="caroussel">
+
+            <div class="track">
+
+                <div class="caroussel_item">
+                     <img src="https://wallpaperaccess.com/full/45377.jpg" alt="">
+                </div>
+                <div class="caroussel_item">
+                    <img src="https://wallpaperaccess.com/full/45377.jpg" alt="">
+                </div>
+                <div class="caroussel_item">
+                    <img src="https://wallpaperaccess.com/full/45377.jpg" alt="">
+                </div>
+
             </div>
 
-        </section>
-            <div class="block_2">
 
+      <!-- Section Destination ou Bonus -->
+      <section class="third">
+
+                <div class="caroussel">
+                  
+            <div class="track">
+
+                <div class="caroussel_item">
+                     <img src="https://wallpaperaccess.com/full/45377.jpg" alt="">
+                </div>
+                <div class="caroussel_item">
+                    <img src="https://wallpaperaccess.com/full/45377.jpg" alt="">
+                </div>
+                <div class="caroussel_item">
+                    <img src="https://wallpaperaccess.com/full/45377.jpg" alt="">
+                </div>
             </div>
+        </div>
+      </section>
 
-        <section>
-
-            <div class="block_3">
-
-            </div>
-
-        </section>
-
-        <section>
-            <div class="block_4">
-
-            </div>
-
-        </section>
-    </div>
     </main>
 
-    <footer class="bar">
-
-        <div class="bar">
-
-            <ul>
-
-                <li>
-
-                </li>
-
-                <li>
-
-                </li>
-
-                <li>
-
-                </li>
-
-            </ul>
-
-        </div>
+    <footer class="footer">
 
     </footer>
-
-</body>
-
+  </body>
 </html>

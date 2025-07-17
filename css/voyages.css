@@ -213,22 +213,7 @@ a {
 
 
 .navside{
-  transition: all 0.6s ease-in-out;
-  z-index: 5;
-  margin: 0%;
-  transform: translate(10000px);
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  left: -75vw;
-  top: 34.6vh;
-  position: absolute;
-  overflow-x: hidden;
-  height: 80vw;
-  width: 110vw;
-  background: url("../assets/images/background_header.jpg");
-  background-size: cover;
-  background-position: center;
+display: none;
 }
 
 input {
@@ -244,7 +229,20 @@ input {
 }
 
 input[type="checkbox"]:checked ~ .nav_btn > .navside {
-  transform: translate(0px);
+    transition: all 0.6s ease-in-out;
+  z-index: 5;
+  margin: 0%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  left: -75vw;
+  top: 34.6vh;
+  position: absolute;
+  overflow-x: hidden;
+  height: 80vw;
+  width: 110vw;
+  background: url("../assets/images/background_header.jpg");
+  background-size: cover;
 }
 
 /* navside earth */
@@ -266,22 +264,7 @@ input[type="checkbox"]:checked ~ .nav_btn > .navside {
 
 
 .navside2{
-  transition: all 0.6s ease-in-out;
-  z-index: 5;
-  margin: 0%;
-  transform: translate(10000px);
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  left: -75vw;
-  top: 34.6vh;
-  position: absolute;
-  overflow-x: hidden;
-  height: 80vw;
-  width: 110vw;
-  background: url("../assets/images/photo6.jpg");
-  background-size: cover;
-  background-position: center;
+  display: none;
 }
 
 input {
@@ -309,8 +292,22 @@ input {
 
 
 input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
-  transform: translate(0px);
+  transition: all 0.6s ease-in-out;
+  z-index: 5;
+  margin: 0%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  left: -75vw;
+  top: 34.6vh;
+  position: absolute;
+  overflow-x: hidden;
+  height: 80vw;
+  width: 110vw;
+  background: url("../assets/images/photo6.jpg");
+  background-size: cover;
 }
+
 
 @media (min-width:992px) 
 {
@@ -378,4 +375,10 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .nav_align2 {
 
 
 
+  }
+
+  .block_third{
+    z-index: 5;
+    background: #222;
+    color: #fefefe;
   }
