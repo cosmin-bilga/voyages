@@ -3,19 +3,13 @@ input[type="text"],input[type="text-area"]
     display: block;
 }
 
-main
-{
-    display:flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
 
 form
 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 1vw;
 }
 
 main
@@ -47,6 +41,8 @@ input[type="text"]
 
 textarea
 {
-    width: 100%;
+    width:100%;
     height: 40vh;
+    max-width: 67vw;
+    resize: none;
 }
