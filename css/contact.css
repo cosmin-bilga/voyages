@@ -1,6 +1,5 @@
-input[type="text"],input[type="text-area"]
-{
-    display: block;
+.header {
+  background-color: white;
 }
 
 
@@ -105,19 +104,23 @@ main
     width: 450px;
 }
 
-main h1
-{
-    text-align: center;
+main {
+  margin-left: 15vw;
+  width: 70vw;
+  border-radius: 30px;
+  background-color: white;
+  padding-bottom: 10vh;
 }
 
-body
-{
-    width: 100vw;
-    overflow-x: hidden;
-    background-image: url("../assets/images/background_header.jpg");
-
+main h1 {
+  text-align: center;
 }
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-image: url("../assets/images/background_header.jpg");
+}
 
 
 input[type="text"]
