@@ -80,9 +80,6 @@ main {
 }
 .carousel {
   overflow: hidden;
-  width: calc(
-    250px * 10
-  ); /* 10 images à changer si je vais ajouter d'autres images  */
 }
 
 .carousel__track {
@@ -140,6 +137,13 @@ main {
 }
 
 /* === SCROLL TOP === */
+.scroll-top img {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  margin: auto;
+}
+
 .scroll-top {
   position: fixed;
   bottom: 20px;
@@ -155,7 +159,6 @@ main {
 .scroll-top:hover {
   transform: scale(1.15);
 }
-
 /* === ANIMATION CAROUSEL === */
 @keyframes scrollGallery {
   0% {
