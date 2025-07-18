@@ -23,7 +23,7 @@ a {
   background-image: url("https://wallpapercave.com/wp/wp4118244.jpg");
   background-size: cover;
   background-position: center;
-    height: 40vh;
+  height: 40vh;
   min-height: 200px;
   color: rgb(255, 255, 255);
   display: flex;
@@ -40,6 +40,11 @@ a {
   margin-top: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.header__title:hover {
+  transform: scale(110%);
+  transition: all 0.6s ease-in-out;
 }
 
 .header__nav-list {
@@ -434,14 +439,14 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
   cursor: pointer;
 }
 
-.iconblock img:hover{
+.iconblock img:hover {
   transform: scale(102%);
   background: #fefefe6d;
   border-radius: 50%;
   padding: 2%;
 }
 
-.iconblock{
+.iconblock {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -449,7 +454,6 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
   padding-top: 5vw;
   margin-right: 10vw;
 }
-
 
 @keyframes slide {
   0% {
@@ -507,16 +511,15 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
     margin: 1.5rem;
   }
 
-input[type="checkbox"]:checked ~ .nav_btn > .nav_align {
-  display: flex;
-  justify-content: space-around;
-}
-
-input[type="checkbox"]:checked ~ .nav_btn2 > .nav_align2 {
+  input[type="checkbox"]:checked ~ .nav_btn > .nav_align {
     display: flex;
-  justify-content: space-around;
+    justify-content: space-around;
+  }
 
-}
+  input[type="checkbox"]:checked ~ .nav_btn2 > .nav_align2 {
+    display: flex;
+    justify-content: space-around;
+  }
 
   input[type="checkbox"]:checked ~ .nav_btn > .navside {
     display: none;
@@ -642,24 +645,23 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .nav_align2 {
   }
 
   .iconblock img {
-  height: 2vw;
-  cursor: pointer;
-}
+    height: 2vw;
+    cursor: pointer;
+  }
 
-.iconblock img:hover{
-  transform: scale(110%);
-  background: #fefefe6d;
-  border-radius: 50%;
-  padding: 2%;
-}
+  .iconblock img:hover {
+    transform: scale(110%);
+    background: #fefefe6d;
+    border-radius: 50%;
+    padding: 2%;
+  }
 
-.iconblock{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 2vw;
-  padding-top: 2vw;
-  margin-right: 0%;
+  .iconblock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    margin-right: 0%;
+  }
 }
-}
-
