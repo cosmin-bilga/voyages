@@ -429,21 +429,10 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   z-index: 1000;
+  background-color: lightgrey;
 }
 .scroll-top:hover {
   transform: scale(1.15);
-}
-
-.iconblock img {
-  height: 5vw;
-  cursor: pointer;
-}
-
-.iconblock img:hover{
-  transform: scale(102%);
-  background: #fefefe6d;
-  border-radius: 50%;
-  padding: 2%;
 }
 
 .iconblock{
