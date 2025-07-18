@@ -1,8 +1,12 @@
-
+input[type="text"],input[type="text-area"]
+{
+    display: block;
+}
 
 
 /* Changement de BG pour la page contact */
 .header {
+  background-color: unset;
   background-image: none;
 }
 
@@ -101,23 +105,19 @@ main
     width: 450px;
 }
 
-main {
-  margin-left: 15vw;
-  width: 70vw;
-  border-radius: 30px;
-  background-color: white;
-  padding-bottom: 10vh;
+main h1
+{
+    text-align: center;
 }
 
-main h1 {
-  text-align: center;
+body
+{
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: url("../assets/images/background_header.jpg");
+
 }
 
-body {
-  width: 100vw;
-  overflow-x: hidden;
-  background-image: url("../assets/images/background_header.jpg");
-}
 
 
 input[type="text"]
