@@ -507,13 +507,16 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
     margin: 1.5rem;
   }
 
-  input[type="checkbox"]:checked ~ .nav_btn > .nav_align {
-    display: block;
-  }
+input[type="checkbox"]:checked ~ .nav_btn > .nav_align {
+  display: flex;
+  justify-content: space-around;
+}
 
-  input[type="checkbox"]:checked ~ .nav_btn2 > .nav_align2 {
-    display: block;
-  }
+input[type="checkbox"]:checked ~ .nav_btn2 > .nav_align2 {
+    display: flex;
+  justify-content: space-around;
+
+}
 
   input[type="checkbox"]:checked ~ .nav_btn > .navside {
     display: none;
