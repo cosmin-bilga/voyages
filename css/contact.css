@@ -1,0 +1,48 @@
+input[type="text"],input[type="text-area"]
+{
+    display: block;
+}
+
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1vw;
+}
+
+main
+{
+    margin-left: 15vw;
+    width: 70vw;
+    border-radius: 30px;
+    background-color: white;
+    padding-bottom: 10vh;
+}
+
+main h1
+{
+    text-align: center;
+}
+
+body
+{
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: url("../assets/images/background_header.jpg");
+
+}
+
+input[type="text"]
+{
+    width: 40%;
+}
+
+textarea
+{
+    width:100%;
+    height: 40vh;
+    max-width: 67vw;
+    resize: none;
+}
