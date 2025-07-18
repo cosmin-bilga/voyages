@@ -342,7 +342,7 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
 
 @media (min-width: 992px) {
   .tips__list--item {
-    padding-left: 25rem;
+    padding-left: 15rem;
   }
   .header {
     min-height: 300px;
