@@ -447,6 +447,7 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
   justify-content: space-around;
   padding-bottom: 5vw;
   padding-top: 5vw;
+  margin-right: 10vw;
 }
 
 
@@ -655,6 +656,7 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
   justify-content: space-around;
   padding-bottom: 2vw;
   padding-top: 2vw;
+  margin-right: 0%;
 }
 }
 
