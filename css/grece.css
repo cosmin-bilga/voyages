@@ -1,0 +1,59 @@
+/* MOBILE FIRST : s'applique par défaut */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 16px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* TABLETTE ET + */
+@media (min-width: 600px) {
+    .image-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* === SCROLL TOP === */
+.scroll-top img {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  margin: auto;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+.scroll-top:hover {
+  transform: scale(1.15);
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+    .image-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
