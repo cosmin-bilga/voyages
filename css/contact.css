@@ -1,11 +1,8 @@
-.header {
-  background-color: white;
-}
+
 
 
 /* Changement de BG pour la page contact */
 .header {
-  background-color: none;
   background-image: none;
 }
 
