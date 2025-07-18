@@ -23,7 +23,7 @@ a {
   background-image: url("https://wallpapercave.com/wp/wp4118244.jpg");
   background-size: cover;
   background-position: center;
-  height: 40vh;
+    height: 40vh;
   min-height: 200px;
   color: rgb(255, 255, 255);
   display: flex;
@@ -42,7 +42,7 @@ a {
   letter-spacing: 2px;
 }
 
-.header__title:hover {
+.header__title:hover{
   transform: scale(110%);
   transition: all 0.6s ease-in-out;
 }
@@ -439,14 +439,14 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
   cursor: pointer;
 }
 
-.iconblock img:hover {
+.iconblock img:hover{
   transform: scale(102%);
   background: #fefefe6d;
   border-radius: 50%;
   padding: 2%;
 }
 
-.iconblock {
+.iconblock{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -454,6 +454,7 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
   padding-top: 5vw;
   margin-right: 10vw;
 }
+
 
 @keyframes slide {
   0% {
@@ -511,15 +512,16 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
     margin: 1.5rem;
   }
 
-  input[type="checkbox"]:checked ~ .nav_btn > .nav_align {
-    display: flex;
-    justify-content: space-around;
-  }
+input[type="checkbox"]:checked ~ .nav_btn > .nav_align {
+  display: flex;
+  justify-content: space-around;
+}
 
-  input[type="checkbox"]:checked ~ .nav_btn2 > .nav_align2 {
+input[type="checkbox"]:checked ~ .nav_btn2 > .nav_align2 {
     display: flex;
-    justify-content: space-around;
-  }
+  justify-content: space-around;
+
+}
 
   input[type="checkbox"]:checked ~ .nav_btn > .navside {
     display: none;
@@ -645,23 +647,78 @@ input[type="checkbox"]:checked ~ .nav_btn2 > .navside2 {
   }
 
   .iconblock img {
-    height: 2vw;
-    cursor: pointer;
-  }
+  height: 2vw;
+  cursor: pointer;
+}
 
-  .iconblock img:hover {
-    transform: scale(110%);
-    background: #fefefe6d;
-    border-radius: 50%;
-    padding: 2%;
-  }
+.iconblock img:hover{
+  transform: scale(110%);
+  background: #fefefe6d;
+  border-radius: 50%;
+  padding: 2%;
+}
 
-  .iconblock {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 2vw;
-    padding-top: 2vw;
-    margin-right: 0%;
-  }
+.iconblock{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 2vw;
+  padding-top: 2vw;
+  margin-right: 0%;
+}
+}
+
+/* footer  */
+
+.footer {
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  color: #fefefe;
+  padding: 0.5rem;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer__text {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 20px;
+}
+
+.footer__socials a {
+  display: inline-block;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  /* transition: background 0.3s ease; */
+}
+
+.footer__socials a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__socials img {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.6s ease;
+}
+
+.footer__socials a:hover img {
+  transform: rotateX(360deg);
+}
+
+.footer__credits {
+  font-size: 14px;
+  color: #ccc;
 }

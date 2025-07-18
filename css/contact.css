@@ -1,9 +1,11 @@
-.header {
-  background-color: white;
+input[type="text"],
+input[type="text-area"] {
+  display: block;
 }
 
 /* Changement de BG pour la page contact */
 .header {
+  background-color: unset;
   background-image: none;
   background-color: unset;
 }
@@ -100,7 +102,15 @@ textarea {
   main h1 {
     text-align: center;
   }
+  main h1 {
+    text-align: center;
+  }
 
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: url("../assets/images/background_header.jpg");
+  }
   body {
     width: 100vw;
     overflow-x: hidden;
