@@ -6,9 +6,10 @@ input[type="text"],input[type="text-area"]
 main
 {
     display:flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
+
 
 form
 {
