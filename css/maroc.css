@@ -194,3 +194,6 @@ main {
     font-size: 1.5rem;
   }
 }
+.scroll-top {
+  background-color: unset;
+}
