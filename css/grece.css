@@ -1,25 +1,11 @@
 /* MOBILE FIRST : s'applique par défaut */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.header {
-    padding: 16px;
-    text-align: center;
-    background-color: #f2f2f2;
-}
 
-.header__nav-list {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    list-style: none;
-    padding: 0;
-    margin: 16px 0;
-    flex-wrap: wrap;
-}
+
 
 .image-grid {
     display: grid;
@@ -39,6 +25,30 @@ body {
     .image-grid {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+/* === SCROLL TOP === */
+.scroll-top img {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  margin: auto;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+.scroll-top:hover {
+  transform: scale(1.15);
 }
 
 /* DESKTOP */
