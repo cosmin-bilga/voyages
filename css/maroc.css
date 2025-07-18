@@ -108,7 +108,7 @@ main {
 .maroc-tips {
   background-image: url("../assets/images/maroc/patrimoine_culturel.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   position: relative;
   padding: 3rem 1rem;
 }
