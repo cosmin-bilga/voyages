@@ -80,9 +80,6 @@ main {
 }
 .carousel {
   overflow: hidden;
-  width: calc(
-    250px * 10
-  ); /* 10 images à changer si je vais ajouter d'autres images  */
 }
 
 .carousel__track {
